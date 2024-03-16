@@ -15,7 +15,7 @@ class Solution
     int minNumber(int arr[],int N)
     {
         int sum = accumulate(arr, arr + N, 0);
-        if(isprime(sum))
+        if(isprime(sum))//checking whether sum of digits of a number is prime or not.
             return 0;
         int c = 0;
         while(true)
